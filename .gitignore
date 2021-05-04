@@ -12,7 +12,7 @@
 /build
 
 # misc
-.emmx
+*.emmx
 .vscode
 .DS_Store
 .env.local
