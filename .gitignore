@@ -12,6 +12,7 @@
 /build
 
 # misc
+/screenshots
 *.emmx
 .vscode
 .DS_Store
