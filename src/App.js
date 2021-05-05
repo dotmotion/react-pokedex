@@ -6,7 +6,6 @@ import { Provider } from "./lib/context";
 
 import Display from "./components/Display";
 import List from "./components/List";
-import LangSelect from "./lib/LangSelect";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <main>
         <Suspense fallback={null}>
           <Provider>
-            <LangSelect />
             <Display />
             <List />
           </Provider>

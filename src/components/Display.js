@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import { Consumer } from "../lib/context";
+import LangSelect from "../lib/LangSelect";
 
 function Display() {
   const { t } = useTranslation();
@@ -11,6 +12,14 @@ function Display() {
         const { current } = value;
         return (
           <div className="display-container nes-container is-rounded is-dark animate__animated animate__fadeIn animate_slower">
+            <LangSelect />
+            <div className="buttons_left" />
+            <div className="circle-blue" />
+            <div className="circle-red" />
+            <div className="circle-yellow" />
+            <div className="circle-green" />
+            <div className="small_curve_left" />
+            <div className="curve_left" />
             {current && (
               <div className="flex-col">
                 <div
