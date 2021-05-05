@@ -1,0 +1,11 @@
+{
+  "height.label": "Altura: ",
+  "weight.label": "Peso: ",
+  "type.label": "Tipo: ",
+  "hp.label": "Vida",
+  "speed.label": "Velocidad",
+  "attack.label": "Ataque",
+  "defense.label": "Defensa",
+  "sp-attack.label": "Ataque ESP",
+  "sp-defense.label": "Defensa ESP"
+}
