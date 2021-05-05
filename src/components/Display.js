@@ -1,8 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import { Consumer } from "../lib/context";
 
 function Display() {
+  const { t, i18n } = useTranslation();
   return (
     <Consumer>
       {value => {
@@ -25,10 +27,16 @@ function Display() {
                       className="animate__animated animate__fadeIn animate_slower"
                     />
                     <div className="details">
-                      <p>{`Height: ${current.height} m`}</p>
-                      <p>{`Weight: ${current.weight} kg`}</p>
                       <p>
-                        {`Type: `}
+                        {t("height.label")}
+                        {`${current.height} m`}
+                      </p>
+                      <p>
+                        {t("weight.label")}
+                        {`${current.weight} kg`}
+                      </p>
+                      <p>
+                        {t("type.label")}
                         {current.types.map(type => `${type} `)}
                       </p>
                     </div>
@@ -38,21 +46,21 @@ function Display() {
                   <table class="nes-table is-bordered is-dark">
                     <tbody>
                       <tr>
-                        <td>HP</td>
+                        <td>{t("hp.label")}</td>
                         <td>{current.stats.hp}</td>
-                        <td>Speed</td>
+                        <td>{t("speed.label")}</td>
                         <td>{current.stats.speed}</td>
                       </tr>
                       <tr>
-                        <td>Attack</td>
+                        <td>{t("attack.label")}</td>
                         <td>{current.stats.atk}</td>
-                        <td>Defense</td>
+                        <td>{t("defense.label")}</td>
                         <td>{current.stats.def}</td>
                       </tr>
                       <tr>
-                        <td>SP Attack</td>
+                        <td>{t("sp-attack.label")}</td>
                         <td>{current.stats.spAtk}</td>
-                        <td>SP Defense</td>
+                        <td>{t("sp-defense.label")}</td>
                         <td>{current.stats.spDef}</td>
                       </tr>
                     </tbody>
