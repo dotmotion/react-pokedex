@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Consumer } from "../lib/context";
 
 function Display() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <Consumer>
       {value => {
