@@ -15,7 +15,6 @@ function List() {
 
         return (
           <div className="list-container nes-container is-rounded is-dark">
-            <div className="curve_right" />
             <div className="list">
               {!loading ? (
                 list.map(mon => {
